@@ -11,8 +11,8 @@
 
     <ul>
         <li th:each="cheese : ${cheeses}" class="cheese">
-            <span th:text="${cheese.key}" class="name">Name</span>
-            <span th:text="${cheese.value}" class="description">Description</span>
+            <span th:text="${cheese.name}" class="name">Name</span>
+            <span th:text="${cheese.description}" class="description">Description</span>
         </li>
     </ul>
 </body>
