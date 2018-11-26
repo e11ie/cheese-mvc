@@ -7,9 +7,10 @@
 <nav th:replace="fragments :: navigation"></nav>
 
 <form method="post">
-    <input type="text" name="cheeseName" />
-    <textarea name="cheeseDescription"></textarea>
-    <input type="submit" value="Add Cheese" />
+    <select name="cheeseName">
+        <option th:each="cheese : ${cheeseNames}" th:text="${cheese.key}"></option>
+    </select>
+    <input type="submit" value="Remove Cheese" />
 </form>
 
 </body>
